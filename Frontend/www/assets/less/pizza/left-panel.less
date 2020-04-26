@@ -1,0 +1,34 @@
+#left-panel{
+  height:100%;
+  left:0;
+  padding-top:@infoSectionHeight+5px;
+  padding-left: 30px;
+  padding-right: @rightPanelWidth+30px;
+  margin:auto;
+  max-width: 1354px;
+  @media(max-width:800px){
+    padding-right:@rightPanelWidth - 30px;
+  }
+
+  #pizza_list{
+    padding-top: 30px;
+  }
+
+  #pizza-title{
+    text-align: center;
+  }
+
+  #pizza-type {
+    text-align: center;
+    .pizza-type-list{
+      display: inline-block;
+      a{
+        color: @pizzaTypeColor;
+      }
+      .active a{
+        background-color: @pizzaTypeColor;
+        color: white;
+      }
+    }
+  }
+}

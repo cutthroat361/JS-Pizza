@@ -1,10 +1,31 @@
 .pizza-card {
-  img {
-    max-width: 250px;
+  position:relative;
+  .logo {
+    max-width:@itemWidth;
+    width: 100%;
   }
 
-  h3 {
-    color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
+  .name {
+    color: @pizzaNameColor;
+    font-size: 30px;
+    font-weight:bold;
+  }
+  .description{
+    height:@descriptionHeight;
+  }
+  h2{
+    display:block;
+  }
+  .type{
+    font-size: 12px;
+    color: #a3a0a0;
+  }
+  .pizza-small, .pizza-big{
+    text-align: center;
+  }
+  .pizza-label-popular, .pizza-label-new{
+    position: absolute;
+    right: -15px;
+    top: -30px;
   }
 }

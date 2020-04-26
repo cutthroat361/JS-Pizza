@@ -1,0 +1,128 @@
+#pizza-info{
+  width:100%;
+  height:@infoSectionHeight;
+  position:fixed;
+  background:rgba(0,0,0,0.8);
+  padding-right:@rightPanelWidth+20px;
+  top:0;
+  padding-left:@badgeWidth+30px;
+  z-index: 2000;
+  @media(max-width:800px){
+    padding-right:@rightPanelWidth - 45px;
+    height:auto;
+    padding-bottom:5px;
+  }
+
+  #top-badge{
+    position:fixed;
+    top:0;
+    text-align: center;
+    background:@badgeColor;
+    height:@infoSectionHeight;
+    width:@badgeWidth;
+    margin-left:-(120px);
+    font-size: 19px;
+    padding: 15px 10px 10px;
+    text-transform: uppercase;
+
+    .icon{
+      bottom:-@iconHeight;
+      position:absolute;
+      transform:scaleY(-1);
+      width: @badgeWidth;
+      height: @iconHeight;
+      left: 0;
+    }
+
+    #bottom-title{
+      font-size:25px;
+    }
+
+    a{
+      color:white;
+      text-decoration: none;
+    }
+  }
+
+  #title-info{
+    #info{
+      color: #a1a1a1;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid;
+      height:@infoSectionHeight/2 - 5px;
+
+      #phone-number{
+        font-size: 20px;
+        padding-right: @sectionsPadding;
+        padding-bottom: 15px;
+        @media(max-width:700px){
+          width: 100%;
+          font-size: 14px;
+          padding: 0;
+        }
+      }
+
+      #work-days{
+        font-size: 12px;
+        padding-right: @sectionsPadding;
+      }
+
+      #delivery{
+        font-size: 16px;
+        padding-right: @sectionsPadding;
+      }
+
+      #sign-in-button{
+        float: right;
+        @media(max-width:700px){
+          margin-top: 5px;
+        }
+      }
+      @media(max-width:700px){
+        margin-left:-15px;
+        height:@infoSectionHeight/2 - 25px;
+      }
+    }
+
+    #categories{
+      padding-bottom: 10px;
+      font-size: 16px;
+      cursor: pointer;
+
+      .category a{
+        color:white;
+      }
+    }
+  }
+}
+
+#bottom-badge{
+  position:fixed;
+  bottom:0;
+  text-align: center;
+  color:white;
+  background:@badgeColor;
+  height:@infoSectionHeight+@bottomElementsInc;
+  width:@badgeWidth;
+  font-size: 15px;
+  font-weight:bold;
+  margin-left:10px;
+  z-index: 2000;
+  padding: 10px;
+  text-transform: uppercase;
+
+  .icon{
+    top:-@iconHeight;
+    position:absolute;
+    width: @badgeWidth;
+    height: @iconHeight;
+    left: 0;
+  }
+
+  #discount-title{
+    border-bottom: 2px dotted #d16301;
+    margin-bottom: 7px;
+    padding-bottom: 3px;
+  }
+}

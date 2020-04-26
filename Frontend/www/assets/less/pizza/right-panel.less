@@ -1,0 +1,139 @@
+#right-panel{
+  position:fixed;
+  width:@rightPanelWidth;
+  height:100%;
+  background:white;
+  box-shadow: rgba(0,0,0,0.2) -3px 3px 10px;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:2000;
+  padding-top:@infoSectionHeight;
+  padding-bottom:@infoSectionHeight+@bottomElementsInc;
+  @media(max-width:800px){
+      width:@rightPanelWidth - 50px;
+  }
+  #ordered{
+    font-size: 20px;
+    padding-left: 15px;
+    position:absolute;
+    font-weight:bold;
+    padding-top:35px;
+    top:0;
+    height:@infoSectionHeight;
+    width:100%;
+    @media(max-width:800px){
+      font-size:14px;
+    }
+
+    #clear-order{
+      float: right;
+      margin-top: 10px;
+      padding-right: 15px;
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(0,0,0,0.5);
+      cursor: pointer;
+    }
+  }
+  #sum{
+    font-size: 14px;
+    padding: 10px;
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    height:@infoSectionHeight+@bottomElementsInc;
+    width:100%;
+
+    #sum-title{
+      font-size: 15px;
+      margin-bottom: 15px;
+      font-weight:bold;
+    }
+
+    #sum-number{
+      font-weight:bold;
+      font-size: 20px;
+      float: right;
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    #order{
+      padding: 20px;
+      #reorder{
+        display:none;
+      }
+    }
+  }
+  #boughtList{
+    height:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background:#F5F5F5;
+
+    #empty{
+      text-align:center;
+      padding-top:50px;
+      font-size: 16px;
+    }
+  }
+  .cart-item{
+    position:relative;
+    padding-left:@paddingLeftCartItem;
+    padding-top:@paddingTopCartItem;
+    height:136px;
+    width:@rightPanelWidth;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    overflow-x:hidden;
+    @media(max-width:800px){
+      width:@rightPanelWidth - 50px;
+    }
+    .title-cart{
+      font-size: 20px;
+      color:@pizzaTypeColor;
+      margin-bottom:16px;
+    }
+    .size-info{
+      margin-bottom:8px;
+      font-size:12px;
+      span{
+        horiz-align:center;
+        margin-right:15px;
+        margin-left:3px;
+      }
+    }
+    .price-info{
+      font-weight: bold;
+      span{
+        margin-right:10px;
+      }
+      .quantity-ordered{
+        font-size: 14px;
+        font-weight: bold;
+        color:black;
+        margin:0;
+      }
+      .btn-circle {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 15px;
+      }
+      .remove{
+        margin-left: 25px;
+        color:@pizzaTypeColor;
+      }
+    }
+    .logo-cart{
+      position:absolute;
+      top:@paddingTopCartItem;
+      right:-48px;
+      width:96px;
+      height:96px;
+      border-radius: 50% 0 0 50%;
+    }
+  }
+}
