@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza - <%= pageTitle%></title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href=<%= style%> />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="bottom-badge" >
+    <img class="icon" src="assets/images/discount.svg">
+    <div id="discount-title">Цього тижня на все</div>
+    <div id="discount">-20%</div>
+</div>
+
+<div id="pizza-info">
+    <div id="top-badge" >
+        <img class="icon" src="assets/images/discount.svg" >
+        <a href="/">
+            <div id="top-title">Pizza</div>
+            <div id="bottom-title">KMA</div>
+        </a>
+    </div>
+    <div id="title-info">
+        <div id="info">
+            <div id="phone-number" class="visible-xs-inline-block visible-sm-inline-block visible-lg-inline-block visible-md-inline-block">
+                (044) 222 5 222
+            </div>
+            <div id="work-days" class="visible-lg-inline-block visible-md-inline-block">
+                24 години/ 7 днів на тиждень
+            </div>
+            <div id="delivery" class="visible-lg-inline-block">
+                Безкоштовна доставка піци
+            </div>
+            <button class="btn btn-warning" id="sign-in-button">
+                Ввійти
+            </button>
+        </div>
+        <div id="categories">
+            <span class="category">
+                <a href="../mainPage.ejs" class="hidden-xs">Піца</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="right-panel">
+    <div id="ordered">
+        Замовлення
+        <span id="orderNum" class="badge">0</span>
+        <span id="clear-order">
+            Очистити замовлення
+        </span>
+    </div>
+    <div id="sum">
+        <div id="order">
+            <button type="button" class="btn btn-warning btn-lg btn-block button-order" id="buy" disabled>
+                Замовити
+            </button>
+            <button type="button" class="btn btn-default btn-lg btn-block button-edit-order" id="reorder">
+                Редагувати замовлення
+            </button>
+        </div>
+    </div>
+    <div id="boughtList"></div>
+</div>

@@ -1,0 +1,38 @@
+
+<div id="left-panel">
+    <div id="input">
+        <div class="data_field">1. Контактні дані</div>
+        <form class="col-md-7">
+            <div><label for="flname">Ім'я</label><input type="text" id="flname" placeholder="Ім'я Фамілія"></div>
+            <div><label for="phone">Телефон</label><input type="text" id="phone" placeholder="+380994010999"></div>
+            <div><label for="address">Адреса</label><input type="text" id="address" placeholder="Київ, вул. Спаська, 2"></div>
+        </form>
+        <div id="infoOrder" class="col-md-5">
+            <div class="data_field">Інформація про замовлення</div>
+            <div class="infoItem"><b>Приблизний час доставки: </b><span id="timeInfo">невідомий</span></div>
+            <div class="infoItem"><b>Адреса доставки: </b><span id="addressInfo">невідома</span></div>
+        </div>
+    </div>
+    <button class="btn btn-warning buy-big" id="submit">Далі ></button>
+    <div id="googleMap"></div>
+</div>
+<div id="liqpay" style="z-index:9999999"></div>
+<footer>
+    <p>Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії</p>
+    <p>
+        Доставка піци не здійснюється
+    </p>
+</footer>
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script	type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBv_aIt08p1n1izulW_swHYSFba_nmwzYE"></script>
+<script	src="//static.liqpay.ua/libjs/checkout.js" async></script>
+<!--Own JavaScript -->
+<script type="text/javascript"  src="assets/js/main.js"> </script>
+</body>
+
+</html>
