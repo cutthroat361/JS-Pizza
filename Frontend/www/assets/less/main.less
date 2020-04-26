@@ -1,3 +1,34 @@
-@mainColor: blue;
+@pizzaNameColor: #ec6a1c;
+@badgeColor:#ea862e;
+@pizzaTypeColor:#ec890e;
+@infoSectionHeight:90px;
+@badgeWidth:100px;
+@iconHeight:11px;
+@itemWidth:300px;
+@rightPanelWidth:330px;
+@sectionsPadding:30px;
+@bottomElementsInc:30px;
+@descriptionHeight:65px;
+@paddingTopCartItem:20px;
+@paddingLeftCartItem:24px;
+@borderRadiusInput:6px;
 
+body{
+  background:#fffff5;
+}
+footer{
+  padding: 40px @rightPanelWidth 40px 0;
+  color: grey;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  text-align: center;
+  height:200px;
+}
+.badge{
+   background:@pizzaTypeColor;
+}
+
+@import "pizza/left-panel";
 @import "pizza/pizza-card";
+@import "pizza/pizza-info";
+@import "pizza/right-panel";
